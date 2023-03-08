@@ -21,14 +21,14 @@
 
     }
 
-    .centrar {
+    .centrar{
         display: grid;
         place-items: center;
         height: 100vh;
     }
 
     #Formulario{
-        background-color: dodgerblue;
+        background-color: rgb(26, 113, 201);
         width: 60vw;
         min-width: 500px;
         height: auto;
@@ -39,23 +39,24 @@
     }
 
     .formulario_header{
-        border: rgb(0, 55, 110) solid 3px;
+        border: rgb(26, 113, 201) solid 3px;
         background-color: aqua;
         text-align: center;
         padding: 5px;
         border-radius: 5px;
+        height: 1.5cm;
     }
 
-    .formulario__Form{
-        background-color: whitesmoke;
+    .formulario_form{
+        background-color: rgba(245, 245, 245, 0.937);
         margin-top: 1em;
         margin-bottom: 1em;
         border-radius: 5px;
         padding: 15px;
     }
 
-    .formulario__Footer{
-        border: rgb(0, 55, 110) solid 3px;
+    .formulario_footer{
+        border: rgb(26, 113, 201) solid 3px;
         background-color: aqua;
         text-align: center;
         padding: 5px;
@@ -64,16 +65,17 @@
 
 </style>
 
-<body class="centrarBody">
+<body class="centrar">
     <main id="Formulario">
         <div id="formulario2.0">
             <header class="formulario_header">
                 <div>
-                    <h3><%Header%></h3>
+                    <h3 style="display: grid; place-items: center;">Viajes al Destino Feliz</h3>
                 </div>
             </header>
+            <br>
 
-            <form action="" method="p" class="formulario2.0_Form">
+            <form action="" method="p" class="formulario_form">
                     
                 
                 <div class="input-group mb-3">
@@ -132,28 +134,32 @@
                     <span class="input-group-text" id="addon-wrapping">$</span>
                     <input id="SubTotal" style="max-width: 250px;" type="number" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping" readonly >
                   </div>
+                  <br>
 
                   <div class="input-group flex-nowrap">
                     <span style="width: 125px; justify-content: center;"  class="input-group-text" id="addon-wrapping">Impuesto 16%</span>
                     <span class="input-group-text" id="addon-wrapping">$</span>
                     <input id="Impuesto" style="max-width: 250px;" type="number" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping" readonly >
                   </div>
+                  <br>
 
                   <div class="input-group flex-nowrap">
                     <span style="width: 125px; justify-content: center;"  class="input-group-text" id="addon-wrapping">Descuento</span>
                     <span class="input-group-text" id="addon-wrapping">$</span>
                     <input id="Descuento" style="max-width: 250px;" type="number" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping" readonly >
                   </div>
+                  <br>
 
                   <div class="input-group flex-nowrap">
                     <span style="width: 125px; justify-content: center;"  class="input-group-text" id="addon-wrapping">Total a Pagar</span>
                     <span class="input-group-text" id="addon-wrapping">$</span>
                     <input id="TotalAPagar" style="max-width: 250px;" type="number" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping" readonly >
                   </div>
+                  <br>
 
             </form>
 
-            <footer class="formulario__Footer">
+            <footer class="formulario_footer">
                 <b><%=Footer%></b>
             </footer>
         </div>
